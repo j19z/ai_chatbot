@@ -29,7 +29,9 @@ def generate_response(prompt):
 
 def main():
     #Streamlit
-    messages = st.container(height=600)
+    st.set_page_config(page_title="AI ChatBot", page_icon='🤖')
+    st.header('AI ChatBot')
+    messages = st.container(height=400)
     if prompt := st.chat_input("Say something"):
         messages.chat_message("user").write(prompt)
         response = generate_response(prompt)
