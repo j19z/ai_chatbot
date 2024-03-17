@@ -26,9 +26,15 @@ def generate_response(prompt):
     
     return generated_text.replace(prompt, "").strip()
 
-#Streamlit
-messages = st.container(height=600)
-if prompt := st.chat_input("Say something"):
-    messages.chat_message("user").write(prompt)
-    response = generate_response(prompt)
-    messages.chat_message("assistant").write(f"AiChat: {response}")
+
+def main():
+    #Streamlit
+    messages = st.container(height=600)
+    if prompt := st.chat_input("Say something"):
+        messages.chat_message("user").write(prompt)
+        response = generate_response(prompt)
+        messages.chat_message("assistant").write(f"AiChat: {response}")
+
+
+if __name__ == '__main__':
+    main()
