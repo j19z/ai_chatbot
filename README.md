@@ -24,20 +24,20 @@ To run this project locally, follow these steps:
 1. Clone the repository:
 ```bash
 git clone https://github.com/yourusername/ai_chatbot.git
-
+```
 2. Install the required packages:
 ```bash
 pip install -r requirements.txt
-
+```
 3. Set up your .env file with your Hugging Face API token:
 ```bash
 HUGGINGFACE_API_TOKEN=your_token_here
-
+```
 ### Usage
 Run the Streamlit application:
 ```bash
 streamlit run app.py
-
+```
 ### Limitations
 The chatbot's responses are very limited since it uses the Hugging Face API directly. All API requests are made to Hugging Face's free server, which may have usage limits.
 
