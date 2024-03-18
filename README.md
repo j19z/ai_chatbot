@@ -23,7 +23,7 @@ To run this project locally, follow these steps:
 ### Installation
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/ai_chatbot.git
+git clone https://github.com/j19z/ai_chatbot.git
 ```
 2. Install the required packages:
 ```bash
